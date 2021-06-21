@@ -22,6 +22,6 @@ These will link you to the latest builds found in the [releases](https://github.
 
 ## Social Media 
 
-| [GitHub](https://github.com/pl4g/)  | [YouTube](https://www.youtube.com/channel/UC-WNF8P9rAB7U6JUG5QrZlA) | [Twitch](https://www.twitch.tv/pl4gg_/) | [Steam](https://steamcommunity.com/id/pl4g_) |
+| [GitHub](https://github.com/pl4g/)  | 
 
 | ------------- |
