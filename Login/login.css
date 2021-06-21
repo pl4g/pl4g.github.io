@@ -1,0 +1,57 @@
+html, button, input {
+    background: #0e79b2;
+    color: #e5dc15;
+    font-family: monospace;
+}
+
+button {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #e5dc15;
+    border-radius: 0.5rem;
+    background: #0e79b2;
+    box-shadow: 0 3px #c2bb11;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #0e79b2;
+    position: relative;
+    top: 0;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 3px #c2bb11;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #e5dc15;
+    border-radius: 0.5rem;
+    background: #0e79b2;
+    box-shadow: 0 3px #c2bb11;
+    outline:none;
+
+}
+
+label {
+    font-size: 40px;
+}
+
+form, p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+}
