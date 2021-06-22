@@ -29,8 +29,8 @@
 
 <br>
 
-<a align="center">Wanting to learn JS, JSON, Java.</a>
-<br>I also record videos in my <a href="https://www.youtube.com/channel/UC-WNF8P9rAB7U6JUG5QrZlA">Youtube </a>channel.
+<p align="center">Wanting to learn JS, JSON, Java.</p>
+<br><p>I also record videos in my <a href="https://www.youtube.com/channel/UC-WNF8P9rAB7U6JUG5QrZlA">Youtube </a>channel.</p>
 
 <h2 align="center">Social Media</h2>
 
