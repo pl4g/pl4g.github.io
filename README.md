@@ -18,7 +18,7 @@
 <p align="center">                                                                                                 <b style="color: green">echo </b><b style="color: darkkhaki">"Hello World!";</b> I'm <em>ᴘʟ4ɢ_</em> (or <em>nukee</em>)
 <br>
 <p align="center" style="color: cornflowerblue">languagesIdevelop <a style="color: grey">= <a style="color: yellow">[<a style="color: green">"python", "php", "css", "html"<a style="color:yellow">]</a></p>
-<a align="center" style="color: unset">Wanting to learn JS, JSON, Laravel</a>
+<a align="center" style="color: unset">Wanting to learn JS, JSON, Java</a>
 <br>I also record videos in my <a href="https://www.youtube.com/channel/UC-WNF8P9rAB7U6JUG5QrZlA">Youtube</a> channel.
 
 <h2 align="center">Social Media</h2>
