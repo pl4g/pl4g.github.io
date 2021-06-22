@@ -20,12 +20,11 @@
 </p>
 <br>
 <p align="center" style="color: unset">
-  <a  style="color: cornflowerblue">languagesIdevelop 
-  <a style="color: grey">= 
-  <a style="color: yellow">[
-  <a style="color: green">"python", "php", "css", "html"
-  <a style="color:yellow">]
-  </a>
+  <a  style="color: cornflowerblue">languagesIdevelop </a>
+  <a style="color: grey">= </a>
+  <a style="color: yellow">[</a>
+  <a style="color: green">"python", "php", "css", "html"</a>
+  <a style="color:yellow">]</a>
 </p>
 
 <a align="center">Wanting to learn JS, JSON, Java.</a>
