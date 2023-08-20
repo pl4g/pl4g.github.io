@@ -1,0 +1,19 @@
+@use '../_core.scss';
+
+body {
+    background-color: core.$background;
+    color: core.$text;
+
+    display: grid;
+}
+
+.container {
+    background-color: #ccc;
+
+    width: 50%;
+    height: 50%;
+
+    display: grid;
+    place-self: center;
+    grid-column: 1fr 1fr;
+}

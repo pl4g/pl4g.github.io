@@ -1,0 +1,18 @@
+@use '_core.scss';
+
+body {
+   background-color: core.$background;
+   color: core.$text;
+
+   ul { list-style-type: none; }
+   a { text-decoration: none;}
+}
+
+.title { 
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   font-weight: 500;
+}
+
+.container {
+   display: grid;
+}
