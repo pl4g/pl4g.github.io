@@ -1,4 +1,4 @@
 # plague.is-a.dev
-🥣 My souper webpage 🌐
+🥣 My souper website 🌐
 
 Built with ❤ and [zola](https://www.getzola.org/)
