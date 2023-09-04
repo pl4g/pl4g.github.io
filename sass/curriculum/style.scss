@@ -20,6 +20,7 @@ body {
 
     margin-inline: 15%;
     width: auto;
+    overflow: hidden;
 
     ul { 
         list-style-type: none; 
@@ -37,6 +38,8 @@ body {
 * {
     font-family: 'Montserrat', monospace;
 }
+
+footer {display:none}
 
 header {
     display: flex;
@@ -175,14 +178,15 @@ header {
                     }
                 }
 
-                div {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
 
                 @media (max-width: 666px) { 
                     border-inline: none;
+
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
                 }
 
                 img {
