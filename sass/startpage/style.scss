@@ -1,19 +1,45 @@
 @use '../_core.scss';
 
+
+* {
+    font-family: "Roboto Mono", monospace;
+}
+
 body {
     background-color: core.$background;
     color: core.$text;
 
     display: grid;
+    place-items: center;
+
+    header, footer {
+      display: none;
+    }
+
 }
 
-.container {
-    background-color: #ccc;
+a {
+  text-decoration: none;
+  color: core.$text;
+}
 
-    width: 50%;
-    height: 50%;
+.content {
+    background-color: #444;
 
-    display: grid;
-    place-self: center;
-    grid-column: 1fr 1fr;
+    width: max(66%, 1000px);
+
+    height: max(50%, 500px) ;
+    display: flex;
+
+    img {
+      height: 100%;
+    }
+
+    table {
+      width: 100%;
+
+      tbody tr td {
+        align-items: center;
+      }
+    }
 }

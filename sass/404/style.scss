@@ -6,6 +6,10 @@ body {
     display: grid;
     place-items: center;
     user-select: none;
+
+    header, footer {
+        display: none;
+    }
 }
 
 body::before {

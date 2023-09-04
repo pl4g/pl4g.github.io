@@ -1,0 +1,154 @@
+@use '../_core.scss';
+
+core.$background: #000;
+core.$accent: #ccc;
+
+body {
+    background-color: core.$background;
+    color: core.$accent;
+
+    margin-inline: 15%;
+    width: auto;
+
+    ul { 
+        list-style-type: none; 
+    }
+
+    a { 
+        color: core.$accent;
+    }
+
+    @media (max-width: 666px) {
+        margin-inline: 10%;
+    }
+}
+
+* {
+    font-family: 'Montserrat', monospace;
+}
+
+header {
+    display: flex;
+
+    .presentation {
+        aspect-ratio: 16/9;
+
+        max-height: 250px;
+        min-width: 250px;
+
+        display: flex;
+        background-color: core.$accent;
+        color: core.$background;
+        padding: 1%;
+
+        h1 {
+            width: 10%;
+            font-size: xx-large;
+
+            align-self: flex-end;
+            strong {
+
+                font-size: x-large;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .resume {
+        display: flex;
+        padding: 2%;
+        padding-bottom: 50px;
+        align-items: flex-end;
+
+    }
+
+    @media (max-width: 666px) {
+        .presentation {
+            max-width: 250px;
+
+            h1 {
+                font-size: x-large;
+
+                strong {
+                    font-size: large;
+                }
+            }
+        }
+
+        .resume {
+            position: absolute;
+            top: 160px;
+            max-width: 60%;
+            min-width: 250px;
+        }
+    }
+}
+
+.content {
+    position: relative;
+    top: -45px;
+
+    padding: 2%;
+    padding-top: 100px;
+    border: core.$accent 3px solid;
+
+    min-width: 280px;
+
+    @media (max-width: 666px) {
+        top: -30px;
+        padding-top: 170px;
+
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .page {
+        padding-inline: 1%;
+        padding-bottom: 1%;
+
+        h1 {
+            font-size: x-large;
+            padding-inline: 5px;
+            border-bottom: 1px solid core.$accent;
+        }
+
+        h3 {
+            font-size: large;
+        }
+
+        i {
+            font-size: xx-large;
+        }
+
+        .page-content {
+            padding: 10px;
+
+            &:has(table) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        table {
+            border-collapse: collapse;
+            border-style: hidden;
+
+            th {
+                padding-top: 5px;
+                padding-bottom: 15px;
+            }
+
+            td {
+                border-inline: 1px solid core.$accent;
+            }
+
+            td, th {
+                padding-inline: 20px;
+
+                img {
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}

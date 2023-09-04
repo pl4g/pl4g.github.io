@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block style %}
+    <link rel="stylesheet" href="../curriculum/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+{% endblock style %}
+
+{% block title %}
+    Curriculum
+{% endblock title %}
+
+{% block header %}
+    <section class="presentation">
+        {{section.content | safe}}
+    </section>
+    <section class="resume">
+        <p>
+            Adoro tecnologia no geral, mas programação é onde eu me destaco. <br>
+            Sou aberto a aprender e desenvolver em qualquer área da tecnologia.
+        </p>
+    </section>
+{% endblock header %}
+
+{% block content %}
+    {% for page in section.pages %}
+    <section class="page">
+        <h1>{{page.title | safe}}</h1>
+        <section class="page-content">
+            {{page.content | safe}}
+        </section>
+    </section>
+    {% endfor %}
+{% endblock content %}

@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block style %}
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/startpage/style.css">
 {% endblock style %}
+
+
+{% block content %} 
+  <img src='/startpage/image.gif'/>
+  {{ section.content | safe }}
+{% endblock content %}
