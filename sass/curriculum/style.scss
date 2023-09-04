@@ -1,7 +1,18 @@
 @use '../_core.scss';
 
-core.$background: #000;
-core.$accent: #ccc;
+:root {
+
+    --background: #fff; 
+    --color: #161616;
+
+    @media (prefers-color-scheme: dark) {
+        --background: #161616; 
+        --color: #fff;
+    }
+}
+
+core.$accent: var(--color);
+core.$background: var(--background);
 
 body {
     background-color: core.$background;
@@ -19,7 +30,7 @@ body {
     }
 
     @media (max-width: 666px) {
-        margin-inline: 10%;
+        margin-inline: 7.5%;
     }
 }
 
@@ -92,7 +103,7 @@ header {
     padding-top: 100px;
     border: core.$accent 3px solid;
 
-    min-width: 280px;
+    min-width: 300px;
 
     @media (max-width: 666px) {
         top: -30px;
@@ -103,6 +114,9 @@ header {
     }
 
     .page {
+
+        word-wrap: break-word;
+
         padding-inline: 1%;
         padding-bottom: 1%;
 
@@ -114,16 +128,14 @@ header {
 
         h3 {
             font-size: large;
-        }
 
-        i {
-            font-size: xx-large;
         }
 
         .page-content {
             padding: 10px;
 
             &:has(table) {
+                padding: 0;
                 display: flex;
                 justify-content: center;
             }
@@ -134,19 +146,57 @@ header {
             border-style: hidden;
 
             th {
+                font-size: large;
                 padding-top: 5px;
                 padding-bottom: 15px;
+
+                @media (max-width: 666px) { 
+                    font-size: medium;
+                }
+
+                @media (max-width: 420px) { 
+                    font-size: small;
+                }
             }
 
             td {
+                padding-inline: min(20px,1%);
                 border-inline: 1px solid core.$accent;
-            }
 
-            td, th {
-                padding-inline: 20px;
+                li {
+                    font-size: large;
+
+                    @media (max-width: 666px) { 
+                        font-size: medium;
+                    }
+
+                    @media (max-width: 420px) { 
+                        font-size: small;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                @media (max-width: 666px) { 
+                    border-inline: none;
+                }
 
                 img {
                     padding: 2px;
+                    width: 32px;
+
+                    @media (max-width: 666px) { 
+                        width: 24px;
+                        border-inline: none;
+                    }
+
+                    @media (max-width: 420px) { 
+                        width: 16px;
+                    }
                 }
             }
         }
