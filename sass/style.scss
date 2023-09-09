@@ -70,6 +70,10 @@ main {
    justify-content: center;
 
    #canvas {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: 0.5px solid $accent;
    }
 }
