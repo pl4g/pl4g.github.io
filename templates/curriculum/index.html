@@ -21,7 +21,7 @@
     </section>
 {% endblock header %}
 
-{% block content %}
+{% block main %}
     {% for page in section.pages %}
     <section class="page">
         <h1>{{page.title | safe}}</h1>
@@ -30,4 +30,4 @@
         </section>
     </section>
     {% endfor %}
-{% endblock content %}
+{% endblock main %}

@@ -1,15 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %} 🥣 Welcome to my souper website 🥣 {% endblock title %}
+{% block title %} plague's place {% endblock title %}
 
 {% block style %}
   <link rel="stylesheet" href="/style.css">
 {% endblock style %}
 
-{% block content %}
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="curriculum">cv</a></li>
-    <li><a href="blog">blog</a></li>
-  </ul>
-{% endblock content %}
+{% block script %}
+{% endblock script %}
+
+
+{% block header %}
+  <nav>
+    <a href="#">HOME</a>
+    <a href="curriculum">CV</a>
+    <a href="blog">BLOG</a>
+  </nav>
+{% endblock header %}
+
+
+{% block main %}
+  <div id="canvas">
+    <h1>Work in Progress</h1>
+  </div>
+{% endblock main %}

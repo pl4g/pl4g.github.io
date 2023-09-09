@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock %}</title>
+  <link rel="shortcut icon" href="/favicon.svg">
   {% block style %} {% endblock %}
   {% block script %} {% endblock %}
 </head>
@@ -14,9 +15,9 @@
     {% block header %} {% endblock %}
   </header>
 
-  <section class="content">
-    {% block content %} {% endblock %}
-  </section>
+  <main class="main">
+    {% block main %} {% endblock %}
+  </>
 
   <footer>
     {% block footer %} {% endblock %}

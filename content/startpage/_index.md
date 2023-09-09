@@ -1,6 +1,6 @@
 +++
 title = 'startpage'
-template = 'startpage.html'
+template = 'startpage/index.html'
 +++
 
 | social | dev | gaming |
