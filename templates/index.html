@@ -1,26 +1,32 @@
-{% extends "base.html" %}
+{% extends "t_base.html" %}
+
+{% block favicon %}data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥣</text></svg>{% endblock favicon %}
 
 {% block title %} plague's place {% endblock title %}
 
 {% block style %}
-  <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 {% endblock style %}
 
 {% block script %}
+<script defer src="js/plague-text-animation.js"></script> 
 {% endblock script %}
 
-
 {% block header %}
-  <nav>
-    <a href="#">HOME</a>
-    <a href="curriculum">CV</a>
-    <a href="blog">BLOG</a>
-  </nav>
+<header>
+    <ul>
+    {% for page in section.pages %}
+        <li><a href="{{page.permalink | safe}}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+</header>
+ 
+ 
 {% endblock header %}
 
-
 {% block main %}
-  <div id="canvas">
-    <h1>Work in Progress</h1>
-  </div>
+<main>
+    <canvas id="plague-canvas"></canvas>
+    <h1 id="plague-text"></h1>
+</main> 
 {% endblock main %}

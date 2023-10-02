@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👻 Hello there</title>
+{% extends "t_base.html" %}
+
+{% block title %}👻 Hello there{% endblock title %}
+
+{% block style %} 
     <link rel="stylesheet" href="/404/style.css">
-</head>
-<body>
-    <main class="main">
+{% endblock style %}
+
+{% block main %}
+    <main>
         <h1>404</h1>
         <h3>You won't find anything...</h3>
         <h2>go back <strong>NOW!</strong></h2>
     </main>
-</body>
-</html>
+{% endblock main %}

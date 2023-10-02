@@ -1,0 +1,21 @@
+@use 'core';
+
+$text: core.$text;
+$background: core.$background;
+
+*, body {
+    color: $text;
+    background-color: $background;
+}
+
+#plague-canvas {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#plague-text {
+    z-index: 1;
+    position: absolute;
+}
